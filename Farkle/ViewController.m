@@ -11,6 +11,8 @@
 
 @interface ViewController () <DieLabelDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *userScore;
+
 @property NSMutableArray *dice;
 @property BOOL firstRoll;
 
