@@ -56,8 +56,8 @@
 		2C47DB24198973890080E0A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C47DB26198973890080E0A4 /* FarkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FarkleTests.m; sourceTree = "<group>"; };
 		2C47DB30198973BE0080E0A4 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
-		2C47DB32198973FC0080E0A4 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DieLabel.h; path = Farkle/DieLabel.h; sourceTree = "<group>"; };
-		2C47DB33198973FC0080E0A4 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DieLabel.m; path = Farkle/DieLabel.m; sourceTree = "<group>"; };
+		2C47DB32198973FC0080E0A4 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
+		2C47DB33198973FC0080E0A4 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,6 @@
 		2C47DAEF198973890080E0A4 = {
 			isa = PBXGroup;
 			children = (
-				2C47DB32198973FC0080E0A4 /* DieLabel.h */,
-				2C47DB33198973FC0080E0A4 /* DieLabel.m */,
 				2C47DB01198973890080E0A4 /* Farkle */,
 				2C47DB20198973890080E0A4 /* FarkleTests */,
 				2C47DAFA198973890080E0A4 /* Frameworks */,
@@ -121,6 +119,8 @@
 		2C47DB01198973890080E0A4 /* Farkle */ = {
 			isa = PBXGroup;
 			children = (
+				2C47DB32198973FC0080E0A4 /* DieLabel.h */,
+				2C47DB33198973FC0080E0A4 /* DieLabel.m */,
 				2C47DB0A198973890080E0A4 /* AppDelegate.h */,
 				2C47DB0B198973890080E0A4 /* AppDelegate.m */,
 				2C47DB0D198973890080E0A4 /* Main.storyboard */,

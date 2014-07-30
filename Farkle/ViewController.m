@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DieLabel.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+#pragma IBActions
+
+- (IBAction)onRollButtonPressed:(UIButton *)sender
+{
+	for (DieLabel *dieLabel in self.view.subviews) {
+
+		if ([dieLabel isKindOfClass:[DieLabel class]]) {
+			[dieLabel roll];
+		}
+	}
 }
 
 @end

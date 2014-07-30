@@ -28,8 +28,9 @@
 }
 */
 
-- (void)roll {
-	int randomNum = (arc4random() % 5 ) + 1;
+- (void)roll
+{
+	int randomNum = (arc4random() % 6 ) + 1;
 	self.text = [NSString stringWithFormat:@"%d", randomNum];
 }
 
