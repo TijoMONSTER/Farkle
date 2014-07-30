@@ -10,4 +10,6 @@
 
 @interface DieLabel : UILabel
 
+- (void)roll;
+
 @end

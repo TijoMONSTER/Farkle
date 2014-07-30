@@ -28,12 +28,17 @@
 }
 */
 
+- (void)roll {
+	int randomNum = (arc4random() % 5 ) + 1;
+	self.text = [NSString stringWithFormat:@"%d", randomNum];
+}
 
 #pragma mark IBActions
 
 - (IBAction)onTapped:(id)sender
 {
-	
+
 }
+
 
 @end
