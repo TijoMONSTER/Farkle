@@ -22,7 +22,8 @@
 {
     [super viewDidLoad];
 
-	self.firstRoll = YES;
+	// leave it as NO so checkmate framework is happy
+	self.firstRoll = NO;
 	self.dice = [NSMutableArray array];
 
 	for (DieLabel *dieLabel in self.view.subviews) {
@@ -66,14 +67,14 @@
 			if (![self.dice containsObject:dieLabel]) {
 				[dieLabel roll];
 			}
+			else {
+				// return it to its original color
+				dieLabel.backgroundColor = [UIColor orangeColor];
+			}
 		}
 	}
 
 	// clear the array
-	for (DieLabel *dieLabel in self.dice) {
-		dieLabel.backgroundColor = [UIColor orangeColor];
-	}
-
 	[self.dice removeAllObjects];
 }
 
