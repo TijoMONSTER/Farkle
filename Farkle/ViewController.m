@@ -9,7 +9,10 @@
 #import "ViewController.h"
 #import "DieLabel.h"
 
-@interface ViewController ()
+@interface ViewController () <DieLabelDelegate>
+
+@property NSMutableArray *dice;
+@property BOOL firstRoll;
 
 @end
 
@@ -18,18 +21,60 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
 
-#pragma IBActions
+	self.firstRoll = YES;
+	self.dice = [NSMutableArray array];
 
-- (IBAction)onRollButtonPressed:(UIButton *)sender
-{
 	for (DieLabel *dieLabel in self.view.subviews) {
 
 		if ([dieLabel isKindOfClass:[DieLabel class]]) {
-			[dieLabel roll];
+			dieLabel.delegate = self;
 		}
 	}
+}
+
+#pragma mark DieLabelDelegate
+
+- (void)didChooseDie:(id)dieLabel
+{
+	// prevent from selecting on the first roll
+	if (!self.firstRoll) {
+
+		// add die to array and change backgroundColor
+		if (![self.dice containsObject:dieLabel]) {
+
+			DieLabel *label = (DieLabel *)dieLabel;
+			[self.dice addObject:label];
+			label.backgroundColor = [UIColor redColor];
+		}
+	}
+}
+
+#pragma mark IBActions
+
+- (IBAction)onRollButtonPressed:(UIButton *)sender
+{
+	if (self.firstRoll) {
+		self.firstRoll = NO;
+	}
+
+	// roll the dice that aren't in the array
+	for (DieLabel *dieLabel in self.view.subviews) {
+
+		if ([dieLabel isKindOfClass:[DieLabel class]]) {
+
+			if (![self.dice containsObject:dieLabel]) {
+				[dieLabel roll];
+			}
+		}
+	}
+
+	// clear the array
+	for (DieLabel *dieLabel in self.dice) {
+		dieLabel.backgroundColor = [UIColor orangeColor];
+	}
+
+	[self.dice removeAllObjects];
 }
 
 @end

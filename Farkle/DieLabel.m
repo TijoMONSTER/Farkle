@@ -38,7 +38,7 @@
 
 - (IBAction)onTapped:(id)sender
 {
-
+	[self.delegate didChooseDie:self];
 }
 
 
