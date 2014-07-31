@@ -23,6 +23,7 @@
 		2C47DB27198973890080E0A4 /* FarkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DB26198973890080E0A4 /* FarkleTests.m */; };
 		2C47DB31198973BE0080E0A4 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C47DB30198973BE0080E0A4 /* CheckMate.framework */; };
 		2C47DB34198973FC0080E0A4 /* DieLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DB33198973FC0080E0A4 /* DieLabel.m */; };
+		2C47DB3719899F140080E0A4 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47DB3619899F140080E0A4 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		2C47DB30198973BE0080E0A4 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
 		2C47DB32198973FC0080E0A4 /* DieLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DieLabel.h; sourceTree = "<group>"; };
 		2C47DB33198973FC0080E0A4 /* DieLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DieLabel.m; sourceTree = "<group>"; };
+		2C47DB3519899F140080E0A4 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		2C47DB3619899F140080E0A4 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				2C47DB0D198973890080E0A4 /* Main.storyboard */,
 				2C47DB10198973890080E0A4 /* ViewController.h */,
 				2C47DB11198973890080E0A4 /* ViewController.m */,
+				2C47DB3519899F140080E0A4 /* Player.h */,
+				2C47DB3619899F140080E0A4 /* Player.m */,
 				2C47DB13198973890080E0A4 /* Images.xcassets */,
 				2C47DB02198973890080E0A4 /* Supporting Files */,
 			);
@@ -262,6 +267,7 @@
 				2C47DB0C198973890080E0A4 /* AppDelegate.m in Sources */,
 				2C47DB08198973890080E0A4 /* main.m in Sources */,
 				2C47DB34198973FC0080E0A4 /* DieLabel.m in Sources */,
+				2C47DB3719899F140080E0A4 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

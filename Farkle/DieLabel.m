@@ -10,15 +10,6 @@
 
 @implementation DieLabel
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 - (void)roll
 {
 	int randomNum = (arc4random() % 6 ) + 1;
